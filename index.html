@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,63 +9,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira&family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&family=Saira+Condensed:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>CK | Full Stack Developer</title>
 </head>
+
 <body>
-    <!-- HEADER / NAV -->
-    <header>
-        <nav class="navbar is-fixed-top has-shadow">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="#">
-                        <img src="./assets/img/my-logo.jpg" alt="calvin's logo">
-                    </a>
-                    <span class="navbar-burger" data-target="navbarMenuHeroA">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-                <div id="navbarMenuHeroA" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item is-active" href="#home">
-                            Home
-                        </a>
-                        <a class="navbar-item" href="#about">
-                            About
-                        </a>
-                        <a class="navbar-item" href="#projects">
-                            Projects
-                        </a>
-                        <a class="navbar-item" href="#contact">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <a href="./index.html"><img src="./assets/img/my-logo.png" alt="my logo" class="nav-logo"></a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="./index.html">00. Home</a></li>
+                <li><a href="#">01. About</a></li>
+                <li><a href="#">02. Services</a></li>
+                <li><a href="#">03. Work</a></li>
+                <li><a href="#">04. Contact</a></li>
+                <li><a href="#">05. Resume</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- HOME PAGE -->
-    <section class="home-page" id="home">
-        <div class="home-container">
-            <div class="home-image">
-                <img src="./assets/img/edited-calvin.png" alt="picture of calvin smiling">
-            </div>
-            <div class="home-greeting">
-                <p>Hi, I'm</p>
-                <p><strong>Calvin Kim</strong></p>
-                <div class="home-profession">full stack developer</div>
-            </div>
+    <div class="columns home-container">
+        <!-- IMAGE SECTION -->
+        <div class="column image-container">
+            <img src="./assets/img/edited-calvin.png" alt="calvin smiling">
         </div>
-    </section>
-   
+        <!-- WELCOME SECTION -->
+        <div class="column welcome-container">
+            <p class="welcome-hi">Hi,</p>
+            <p class="welcome-name">I'm <span class="welcome-letter-c">C</span>alvin,</p>
+            <p class="welcome-web-developer">web developer</p>
+            <p class="welcome-full-stack">Full-Stack Developer</p>
+        </div>
+    </div>
 
-    
+
+
 
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
