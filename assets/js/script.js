@@ -1,6 +1,9 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navLinks = document.getElementsByClassName('nav-links')[0];
+const menu = document.querySelector('#menu');
 
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+function closemenu() {
+    menu.style.top = '-100vh';
+}
+
+function openmenu() {
+    menu.style.top = '0'
+}

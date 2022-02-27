@@ -9,46 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira&family=Saira+Condensed:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>CK | Full Stack Developer</title>
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="nav">
-        <a href="./index.html"><img src="./assets/img/my-logo.png" alt="my logo" class="nav-logo"></a>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="./index.html">00. Home</a></li>
-                <li><a href="#">01. About</a></li>
-                <li><a href="#">02. Services</a></li>
-                <li><a href="#">03. Work</a></li>
-                <li><a href="#">04. Contact</a></li>
-                <li><a href="#">05. Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- HOME PAGE -->
-    <div class="columns home-container">
-        <!-- IMAGE SECTION -->
-        <div class="column image-container">
-            <img src="./assets/img/edited-calvin.png" alt="calvin smiling">
-        </div>
-        <!-- WELCOME SECTION -->
-        <div class="column welcome-container">
-            <p class="welcome-hi">Hi,</p>
-            <p class="welcome-name">I'm <span class="welcome-letter-c">C</span>alvin,</p>
-            <p class="welcome-web-developer">web developer</p>
-            <p class="welcome-full-stack">Full-Stack Developer</p>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./assets/img/my-logo.png" alt="calvin's logo">
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">01. Home</a></li>
+                    <li><a href="#">02. About</a></li>
+                    <li><a href="#">03. Services</a></li>
+                    <li><a href="#">04. Work</a></li>
+                    <li><a href="#">05. Contact</a></li>
+                </ul>
+                <p class="lite-text">MENU</p>
+                <img src="./assets/img/cross.png" class="close-icon" onclick="closemenu()" alt="close nav bar">
+            </nav>
+            <img src="./assets/img/hamburger.png" class="menu-icon" onclick="openmenu()" alt="open nav bar">
         </div>
     </div>
 
