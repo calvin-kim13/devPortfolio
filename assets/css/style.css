@@ -22,7 +22,6 @@ body {
     font-family: var(--main-font);
     width: 100%;
     height: 100%;
-    border: 2px solid green;
 }
 
 /* NAVBAR */
@@ -131,8 +130,7 @@ a.active,a:hover {
 
 /* HOME PAGE */
 .home-container {
-    border: 2px solid red;
-    margin-top: 9rem;
+    margin-top: 8rem;
     width: 100%;
     height: 70vh;
     display: flex;
@@ -144,7 +142,6 @@ a.active,a:hover {
 /* HOME IMAGE CONTAINER */
 .home-image-container {
     width: 10rem;
-    border: 2px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +161,6 @@ a.active,a:hover {
 .home-text-container {
     /* margin-top: 7rem; */
     width: 100%;
-    border: 2px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +256,7 @@ a.active,a:hover {
 
 /* ABOUT PAGE */
 .about-header-container {
-    margin-top: 9rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -290,7 +286,6 @@ a.active,a:hover {
 }
 
 .about-image-container {
-    border: 2px solid red;
     width: 15rem;
     height: 17rem;
     margin-top: 1.2rem;
@@ -303,7 +298,6 @@ a.active,a:hover {
 }
 
 .about-text-container {
-    border: 2px solid blue;
     line-height: 1.2rem;
     text-align: justify;
     padding: 1rem;
@@ -370,7 +364,6 @@ a.active,a:hover {
 /* SKILLS PAGE */
 .skills-header-container {
     margin-top: 8rem;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,7 +383,6 @@ a.active,a:hover {
 }
 
 .skills-container {
-    border: 2px solid yellowgreen;
     height: fit-content;
 }
 
@@ -410,7 +402,6 @@ a.active,a:hover {
 }
 
 .progress-container {
-    border: 2px solid brown;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,7 +466,6 @@ a.active,a:hover {
 /* WORK PAGE */
 .work-header-container {
     margin-top: 8rem;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,7 +523,7 @@ a.active,a:hover {
         margin-top: 1rem;
     }
     .markettalk-card {
-        width: 40%;
+        width: 25%;
         height: 100%;
     }
 }
@@ -554,8 +544,7 @@ a.active,a:hover {
 
 /* CONTACT PAGE */
 .contact-container {
-    border: 2px solid red;
-    margin-top: 8.5rem;
+    margin-top: 8rem;
 }
 
 .contact-header {
@@ -579,7 +568,7 @@ a.active,a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .2rem;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .contact-name {
@@ -611,6 +600,10 @@ a.active,a:hover {
     align-items: center;
 }
 
+.contact-btn {
+    margin-top: 1rem;
+}
+
 .button {
     background: transparent;
     border: 1px solid black;
@@ -619,4 +612,38 @@ a.active,a:hover {
 
 .social {
     margin: .4rem;
+}
+
+.contact-footer {
+    text-align: center;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-form {
+        padding: 1rem 8rem 2rem;
+    }
+    .contact-btn {
+        width: 12rem;
+    }
+    .contact-links {
+        margin-top: 1.6rem;
+    }
+    .contact-footer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        padding: 1rem 20rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact-form {
+        padding: 1rem 25rem 2rem;
+    }
 }
