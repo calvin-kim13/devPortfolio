@@ -195,7 +195,7 @@ a.active,a:hover {
     color: white;
     font-size: 1rem;
     background-color: #0082e6;
-    padding: .5rem;
+    padding: .1rem .5rem;
     width: 10rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -550,4 +550,73 @@ a.active,a:hover {
     .markettalk-card img {
         height: 17rem;
     }
+}
+
+/* CONTACT PAGE */
+.contact-container {
+    border: 2px solid red;
+    margin-top: 8.5rem;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3rem;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .2rem;
+    padding: 2rem;
+}
+
+.contact-name {
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: .5rem 0 .5rem 1.2rem;
+}
+
+.contact-email {
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: .5rem 0 .5rem 1.2rem;
+}
+
+.contact-subject {
+    grid-column: span 2;
+    grid-row: span 1;
+    padding: .5rem 0 .5rem 1.2rem;
+}
+
+.contact-message {
+    grid-column: span 2;
+    padding: .5rem 0 .5rem 1.2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background: transparent;
+    border: 1px solid black;
+    padding: .2rem 1rem;
+}
+
+.social {
+    margin: .4rem;
 }
