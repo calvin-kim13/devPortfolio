@@ -298,9 +298,9 @@ a.active,a:hover {
 }
 
 .about-text-container {
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     text-align: justify;
-    padding: 1rem;
+    padding: 1rem 3rem;
     height: 100%;
     width: 100%;
 }
@@ -334,14 +334,14 @@ a.active,a:hover {
 @media screen and (min-width: 1024px) {
     .about-image-container {
         width: 24rem;
-        height: 31rem;
+        height: 29rem;
     }
     .about-text-container {
         padding: 1.2rem;
         font-size: 1.5rem;
         height: 31rem;
         width: 50%;
-        line-height: 1.7rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -392,7 +392,7 @@ a.active,a:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 .keyframes {
@@ -487,7 +487,7 @@ a.active,a:hover {
 .work-container {
     display: grid;
     grid-template-columns: repeat(1, fr);
-    padding: 1rem;
+    padding: 2rem 3rem 0 3rem;
     grid-gap: .6rem;
 }
 
@@ -602,6 +602,7 @@ a.active,a:hover {
 
 .contact-btn {
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .button {
@@ -617,7 +618,7 @@ a.active,a:hover {
 .contact-footer {
     text-align: center;
     margin-top: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     text-decoration: underline;
 }
 
