@@ -10,11 +10,11 @@
     --secondary-font: 'Saira';
     --main-font: 'Saira Condensed';
 
-    --color-one: #0a0a0a;
-    --color-two: #1A1A1A;
-    --color-three: #fff;
-    --color-four: #66FCF1;
-    --color-five: #555;
+    --color-one: #19171A;
+    --color-two: #9615DB;
+    --color-three: #D6D6D6;
+    --color-four: #555759;
+    --color-five: #66FCF1;
 }
 
 /* HTML */
@@ -27,11 +27,14 @@ body {
     font-family: var(--main-font);
     width: 100%;
     height: 100%;
+    background-color: var(--color-one);
+    color: var(--color-three);
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
 nav {
-    background: #0082e6;
+    background: var(--color-one);
     height: 8rem;
     width: 100%;
     position: fixed;
@@ -49,7 +52,7 @@ label.logo {
 }
 
 label.logo a {
-    color: white;
+    color: var(--color-three);
     text-decoration: none;
 }
 
@@ -67,7 +70,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: var(--color-three);
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: .1rem 1rem;
@@ -75,13 +78,14 @@ nav ul li a {
 }
 
 a.active,a:hover {
-    background: #1b9bff;
-    transition: .5s;
+    /* background: var(--color-two); */
+    color: var(--color-two);
+    transition: .4s;
 }
 
 .checkbtn {
     font-size: 2rem;
-    color: white;
+    color: var(--color-three);
     float: right;
     line-height: 8rem;
     margin-right: 2rem;
@@ -111,7 +115,7 @@ a.active,a:hover {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
+        background: var(--color-one);
         top: 8rem;
         left: -100%;
         text-align: center;
@@ -128,7 +132,7 @@ a.active,a:hover {
     }
     a:hover,a.active {
         background: none;
-        color: #0082e6;
+        color: var(--color-two);
     }
     #check:checked ~ ul {
         left: 0;
@@ -152,11 +156,11 @@ a.active,a:hover {
     align-items: center;
 }
 
-.static {
+/* .static {
     color: black;
     font-size: 3rem;
     font-weight: bold;
-}
+} */
 
 .dynamic {
      margin-left: -20px;
@@ -166,7 +170,7 @@ a.active,a:hover {
 }
 
 .dynamic li {
-    color: #FC6D6D;
+    color: var(--color-two);
     list-style: none;
     font-size: 3rem;
     font-weight: bolder;
@@ -191,8 +195,8 @@ a.active,a:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: white;
-    border-left: 2px solid #FC6D6D;
+    background: var(--color-one);
+    border-left: 2px solid var(--color-two);
     animation: typing 1.5s steps(12) infinite;
 }
 
@@ -213,7 +217,7 @@ a.active,a:hover {
 
 /* HOME IMAGE */
 .home-image-container img {
-    border: 1px solid black;
+    border: 1px solid var(--color-two);
     border-radius: 50%;
     height: 10rem;
     width: 10rem;
@@ -252,7 +256,7 @@ a.active,a:hover {
     letter-spacing: .2rem;
 }
 
-.full-stack-dev {
+/* .full-stack-dev {
     color: white;
     font-size: 1rem;
     background-color: #0082e6;
@@ -260,7 +264,7 @@ a.active,a:hover {
     width: 10rem;
     text-align: center;
     margin-bottom: 1rem;
-}
+} */
 
 .hire-me-btn {
     font-size: 1rem;
@@ -294,7 +298,7 @@ a.active,a:hover {
     }
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
     .home-image-container img {
         height: 30rem;
         width: 30rem;
@@ -321,7 +325,7 @@ a.active,a:hover {
         font-size: 1rem;
         margin-top: 1rem;
     }
-}
+} */
 
 /* ABOUT PAGE */
 .about-header-container {
@@ -342,7 +346,7 @@ a.active,a:hover {
     content: '';
     width: 5rem;
     height: .01rem;
-    border: 1px solid black;
+    border: 1px solid var(--color-two);
 }
 
 .about-container {
@@ -448,7 +452,7 @@ a.active,a:hover {
     content: '';
     width: 4rem;
     height: .01rem;
-    border: 1px solid black;
+    border: 1px solid var(--color-two);
 }
 
 .skills-container {
@@ -550,7 +554,7 @@ a.active,a:hover {
     content: '';
     width: 4rem;
     height: .01rem;
-    border: 1px solid black;
+    border: 1px solid var(--color-two);
 }
 
 .work-container {
@@ -561,19 +565,32 @@ a.active,a:hover {
 }
 
 .markettalk-card {
-    border: 2px solid black;
+    border: 2px solid var(--color-four);
     text-align: center;
+    /* -webkit-box-shadow: 0 0 10px var(--color-four);
+        box-shadow: 0 0 10px var(--color-four); */
 }
 
 .markettalk-card img {
     height: 10rem;
     width: 100%;
-    object-fit: contain;
-    border-bottom: 2px solid black;
+    object-fit: cover;
+    object-position: center;
+    border-bottom: 2px solid var(--color-four);
 }
 
 .markettalk-card h4 {
-    margin-top: .5rem;
+    margin-top: 1rem;
+}
+
+.markettalk-card h4 a {
+    color: #7D7F80;
+    text-decoration: none;
+}
+
+.markettalk-card h6 a {
+    color: var(--color-three);
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -636,8 +653,27 @@ a.active,a:hover {
 .contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: .2rem;
+    grid-gap: .3rem;
     padding: 0 2rem 2rem 2rem;
+}
+
+::placeholder {
+    color: var(--color-three);
+}
+
+input, textarea {
+    background-color: var(--color-one);
+    outline: 1px solid var(--color-two);
+    color: var(--color-three);
+    border: none;
+}
+
+input:focus {
+    outline: 3px solid var(--color-two);
+}
+
+textarea:focus {
+    outline: 3px solid var(--color-two);
 }
 
 .contact-name {
@@ -669,26 +705,47 @@ a.active,a:hover {
     align-items: center;
 }
 
+.contact-links button {
+    color: var(--color-three);
+    width: 10rem;
+    height: 3rem;
+}
+
 .contact-btn {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: var(--color-three);
+    width: 10rem;
+    height: 3rem;
 }
 
 .button {
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--color-two);
     padding: .2rem 1rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.10);
+    background-color: var(--color-two);
+    transition: .4s;
+}
+
+.button:active {
+    border: 3px solid var(--color-two);
 }
 
 .social {
     margin: .4rem;
+    border-radius: 9px;
 }
 
 .contact-footer {
     text-align: center;
-    margin-top: 1.6rem;
+    margin-top: 3rem;
     margin-bottom: 1.6rem;
-    text-decoration: underline;
 }
 
 @media screen and (min-width: 768px) {
@@ -702,18 +759,18 @@ a.active,a:hover {
         margin-top: 1.6rem;
     }
     .contact-footer {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .contact-form {
-        padding: 1rem 20rem 2rem;
+        padding: 1rem 25rem 2rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .contact-form {
-        padding: 1rem 25rem 2rem;
+        padding: 1rem 29rem 2rem;
     }
 }
