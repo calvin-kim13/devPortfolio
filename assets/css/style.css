@@ -29,7 +29,6 @@ body {
     height: 100%;
     background-color: var(--color-one);
     color: var(--color-three);
-    overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -707,7 +706,7 @@ textarea:focus {
 
 .contact-links button {
     color: var(--color-three);
-    width: 10rem;
+    width: 8rem;
     height: 3rem;
 }
 
@@ -750,7 +749,7 @@ textarea:focus {
 
 @media screen and (min-width: 768px) {
     .contact-form {
-        padding: 1rem 8rem 2rem;
+        padding: 1rem 10rem 2rem;
     }
     .contact-btn {
         width: 12rem;
@@ -765,12 +764,15 @@ textarea:focus {
 
 @media screen and (min-width: 1024px) {
     .contact-form {
-        padding: 1rem 25rem 2rem;
+        padding: 1rem 15rem 2rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .contact-form {
         padding: 1rem 29rem 2rem;
+    }
+    .contact-links {
+        margin-top: 6rem;
     }
 }
