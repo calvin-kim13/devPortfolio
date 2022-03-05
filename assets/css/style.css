@@ -305,6 +305,21 @@ body.dark .switch::before {
     justify-content: flex-start;
 }
 
+.welcome {
+    font-size: 1.2rem;
+}
+
+.calvin-kim {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.underline {
+    content: '';
+    width: 7.5rem;
+    border: 1px solid var(--primary-color);
+}
+
 .dynamic {
     line-height: 90px;
     height: 90px;
@@ -312,9 +327,9 @@ body.dark .switch::before {
 }
 
 .dynamic li {
-   color: var(--color-two);
+   color: var(--primary-color);
    list-style: none;
-   font-size: 3rem;
+   font-size: 2rem;
    font-weight: bolder;
    position: relative;
    top: 0;
@@ -328,11 +343,10 @@ body.dark .switch::before {
 }
 
 .hire-me-btn {
-    width: 6rem;
-    height: 2rem;
+    width: 6.3rem;
+    height: 2.4rem;
     background: var(--primary-color);
     border: none;
-    outline: 2px solid var(--primary-color);
     color: var(--sidebar-color);
     font-weight: 600;
     border-radius: 5px;
@@ -347,8 +361,57 @@ body.dark .switch::before {
     color: var(--primary-color-light);
 }
 
+body.dark .calvin-kim {
+    color: var(--toggle-color);
+}
+
+body.dark .dynamic li {
+    color: var(--toggle-color);
+}
+
+body.dark .underline {
+    border-color: var(--toggle-color);
+}
+
 body.dark .hire-me-btn {
     color: var(--text-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .home-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .home-image-container {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .home-text-container {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .home-image-container img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .welcome {
+        font-size: 1.8rem;
+    }
+    .calvin-kim {
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+    .full-stack-dev {
+        font-size: 1.3rem;
+    }
+    .underline {
+        width: 13.7rem;
+    }
+    .hire-me-btn {
+        margin-top: 1rem;
+    }
+    .dynamic li {
+       font-size: 3rem;
+    }
 }
 
 /* About me Page */
@@ -362,7 +425,13 @@ body.dark .hire-me-btn {
 
 .about-header {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    padding-top: .5rem;
+    color: var(--primary-color);
+}
+
+body.dark .about-header {
+    color: var(--toggle-color);
 }
 
 .about-content-container {
@@ -395,6 +464,36 @@ body.dark .hire-me-btn {
     padding: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+    .about-text-container {
+        padding: 1rem 6rem;
+    }
+} 
+
+@media screen and (min-width: 1024px) {
+    .about-content-container {
+        grid-template-columns: repeat(2, 1fr);
+        height: 90%;
+    }
+    .about-image-container {
+        height: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .about-image-container img {
+        width: 22rem;
+        height: 22rem;
+    }
+    .about-text-container {
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 1rem 5rem 1rem 0;
+    }
+}
+
 /* Work Page */
 .work-container {
     height: fit-content;
@@ -402,29 +501,106 @@ body.dark .hire-me-btn {
 
 .work-header {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    padding-top: .5rem;
+    color: var(--primary-color);
+}
+
+body.dark .work-header {
+    color: var(--toggle-color);
 }
 
 .work-content-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 1rem;
     padding: 1rem;
 }
 
 .card {
-    border: 1px solid black;
-    width: 20rem;
-    height: 16rem;
+    border: .5px solid var(--body-color);
+    width: 16rem;
+    height: 18rem;
     margin: 0 auto;
 }
 
-.card img {
-    width: 10rem;
-    height: 10rem;
+.card-img-container {
+    height: 60%;
 }
+
+.card img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.work-texts {
+    background: var(--sidebar-color);
+    height: 40%;
+    padding: 1rem;
+}
+
+.work-texts h4 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.work-texts h6 {
+    margin-top: .2rem;
+    font-weight: 400;
+}
+
+.work-texts h4 a:hover {
+    text-decoration: underline;
+}
+
+.work-texts button {
+    border: none;
+    background: var(--primary-color);
+    width: 7.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    margin-top: .8rem;
+}
+
+.work-texts button:hover {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.10);
+    background-color: var(--primary-color);
+    transition: .4s;
+    color: var(--primary-color-light);
+}
+
+.work-texts button a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+body.dark .card {
+    border-color: var(--sidebar-color);
+}
+
+body.dark .work-texts h4 a {
+    color: var(--text-color);
+}
+
+body.dark .work-texts button a {
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .work-content-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        padding: 1rem 4.5rem 0 4.5rem;
+    }
+} 
 
 /* Contact Page */
 .contact-container {
@@ -438,7 +614,13 @@ body.dark .hire-me-btn {
 
 .contact-header {
     font-size: 2rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    padding-top: .5rem;
+    color: var(--primary-color);
+}
+
+body.dark .contact-header {
+    color: var(--toggle-color);
 }
 
 .contact-content-container {
@@ -449,14 +631,17 @@ body.dark .hire-me-btn {
 
 .form-container {
     height: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    margin: 0 auto;
 }
 
 .contact-form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: .3rem;
     padding: 0 2rem;
     height: 80%;
@@ -519,7 +704,8 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
+    margin-top: .4rem;
 }
 
 .email-header {
@@ -584,6 +770,7 @@ body.dark .phone-header {
     background: transparent;
     color: var(--text-color);
     font-weight: normal;
+    margin: .3rem auto 0 auto;
 }
 
 body.dark .button {
@@ -609,4 +796,98 @@ body.dark .button:hover {
 
 body.dark .footer {
     color: var(--text-color);
+}
+
+@media screen and (min-width: 425px) {
+    .phone-container {
+        margin-top: -.6rem;
+    }
+    .contact-links {
+        margin-top: -1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-content-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .contact-name {
+        width: 15rem;
+    }
+    .contact-email {
+        width: 15rem;
+    }
+    .contact-subject {
+        width: 15rem;
+    }
+    .contact-message {
+        width: 15rem;
+    }
+    .contact-links-container {
+        margin-top: 2rem;
+        height: 25rem;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5rem;
+        background: transparent;
+        /* border: 1px solid var(--primary-color); */
+        border-radius: 5px;
+    }
+    .email-container {
+        align-items: flex-start;
+        margin-top: -1rem;
+    }
+    .phone-container {
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+    .footer {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+    }
+    .contact-name {
+        height: 3rem;
+        width: 30rem;
+    }
+    .contact-email {
+        height: 3rem;
+        width: 30rem;
+    }
+    .contact-subject {
+        height: 3rem;
+        width: 30rem;
+    }
+    .contact-message {
+        width: 30rem;
+    }
+    .message-btn {
+        margin: 1rem 0 0 0;
+        width: 10rem;
+    }
+    .phone-header {
+        margin-top: 1rem;
+    }
+    .contact-links {
+        gap: 1rem;
+    }
+    .contact-links button {
+        width: 9rem;
+        height: 2.5rem;
+    }
 }
