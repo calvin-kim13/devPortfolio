@@ -31,8 +31,10 @@ html {
 
 body {
     height: 100vh;
+    width: 100%;
     background: var(--body-color);
     transition: var(--tran-05);
+    /* overflow-x: hidden; */
 }
 
 body.dark {
@@ -400,6 +402,7 @@ body.dark .switch::before {
 /* Contact Page */
 .contact-container {
     height: 100%;
+    width: 100%;
 }
 
 .contact-header-container {
@@ -426,7 +429,8 @@ body.dark .switch::before {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .3rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem;
+    height: 80%;
 }
 
 ::placeholder {
@@ -474,11 +478,7 @@ textarea:focus {
 .contact-links-container {
     height: 100%;
     padding: 0 1rem;
-}
-
-.links-header {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+    margin-top: -2rem;
 }
 
 .contact-links {
@@ -527,8 +527,9 @@ body.dark .button:hover {
     align-items: center;
     background: var(--primary-color);
     height: 10%;
+    width: 100%;
     color: var(--primary-color-light);
-    font-size: .8rem;
+    font-size: .6rem;
 }
 
 body.dark .footer {
