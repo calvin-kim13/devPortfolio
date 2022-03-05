@@ -372,7 +372,7 @@ body.dark .hire-me-btn {
 }
 
 .about-image-container {
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -384,6 +384,7 @@ body.dark .hire-me-btn {
 }
 
 .about-text-container {
+    margin-top: -3rem;
     width: 100%;
     height: 100%;
     display: flex;
