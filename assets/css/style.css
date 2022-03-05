@@ -31,10 +31,9 @@ html {
 
 body {
     height: 100vh;
-    width: 100%;
     background: var(--body-color);
     transition: var(--tran-05);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body.dark {
@@ -328,6 +327,30 @@ body.dark .switch::before {
    }
 }
 
+.hire-me-btn {
+    width: 6rem;
+    height: 2rem;
+    background: var(--primary-color);
+    border: none;
+    outline: 2px solid var(--primary-color);
+    color: var(--sidebar-color);
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.hire-me-btn:hover {
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.10);
+    background-color: var(--primary-color);
+    transition: .4s;
+    color: var(--primary-color-light);
+}
+
+body.dark .hire-me-btn {
+    color: var(--text-color);
+}
+
 /* About me Page */
 .about-container {
     height: 100%;
@@ -373,7 +396,7 @@ body.dark .switch::before {
 
 /* Work Page */
 .work-container {
-    height: 100%;
+    height: fit-content;
 }
 
 .work-header {
@@ -384,7 +407,7 @@ body.dark .switch::before {
 .work-content-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     text-align: center;
     grid-gap: 1rem;
     padding: 1rem;
@@ -392,6 +415,9 @@ body.dark .switch::before {
 
 .card {
     border: 1px solid black;
+    width: 20rem;
+    height: 16rem;
+    margin: 0 auto;
 }
 
 .card img {
@@ -426,9 +452,11 @@ body.dark .switch::before {
 }
 
 .contact-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
     padding: 0 2rem;
     height: 80%;
 }
@@ -456,23 +484,27 @@ textarea:focus {
     grid-column: span 1;
     grid-row: span 1;
     padding: .5rem 0 .5rem 1.2rem;
+    width: 10rem;
 }
 
 .contact-email {
     grid-column: span 1;
     grid-row: span 1;
     padding: .5rem 0 .5rem 1.2rem;
+    width: 10rem;
 }
 
 .contact-subject {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
     padding: .5rem 0 .5rem 1.2rem;
+    width: 10rem;
 }
 
 .contact-message {
-    grid-column: span 2;
+    grid-column: span 1;
     padding: .5rem 0 .5rem 1.2rem;
+    width: 10rem;
 }
 
 .contact-links-container {
@@ -481,19 +513,54 @@ textarea:focus {
     margin-top: -2rem;
 }
 
+.email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.email-header {
+    color: var(--primary-color);
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-header {
+    color: var(--primary-color);
+}
+
+body.dark .email-header {
+    color: var(--toggle-color);
+}
+
+body.dark .phone-header {
+    color: var(--toggle-color);
+}
+
 .contact-links {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 2rem;
+    gap: .4rem;
 }
 
 .button {
-    background: transparent;
+    background: var(--primary-color);
     border: 1px solid var(--primary-color);
     padding: .2rem 1rem;
-    color: var(--text-color);
+    color: var(--sidebar-color);
     width: 6.9rem;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -510,9 +577,16 @@ textarea:focus {
 }
 
 .message-btn {
-    width: 9.5rem;
+    width: 7rem;
     height: 2rem;
     border-radius: 0;
+    background: transparent;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+body.dark .button {
+    color: var(--text-color);
 }
 
 body.dark .button:hover {
