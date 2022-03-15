@@ -1,241 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="./assets/img/my-logo.png" alt="logo">
-                </span>
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="./assets/img/my-logo.png" alt="logo" />
+          </span>
 
-                <div class="text header-text">
-                    <span class="name">Calvin Kim</span>
-                    <span class="profession">Web Developer</span>
-                </div>
-            </div>
+          <div class="text header-text">
+            <span class="name">Calvin Kim</span>
+            <span class="profession">Web Developer</span>
+          </div>
+        </div>
 
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
 
-        <div class="menu-bar">
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="#home">
-                            <i class='bx bx-home icon'></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#about">
-                            <i class='bx bx-user icon'></i>
-                            <span class="text nav-text">About</span>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-link">
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="#home">
+                <i class="bx bx-home icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#about">
+                <i class="bx bx-user icon"></i>
+                <span class="text nav-text">About</span>
+              </a>
+            </li>
+            <!-- <li class="nav-link">
                         <a href="#skills">
                             <i class='bx bx-wrench icon'></i>
                             <span class="text nav-text">Skills</span>
                         </a>
                     </li> -->
-                    <li class="nav-link">
-                        <a href="#work">
-                            <i class='bx bx-file icon'></i>
-                            <span class="text nav-text">Work</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#contact">
-                            <i class='bx bxs-contact icon'></i>
-                            <span class="text nav-text">Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bottom-content">
-                <li class="mode">
-                    <div class="moon-sun">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark Mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-
-            </div>
+            <li class="nav-link">
+              <a href="#work">
+                <i class="bx bx-file icon"></i>
+                <span class="text nav-text">Work</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact">
+                <i class="bx bxs-contact icon"></i>
+                <span class="text nav-text">Contact</span>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <div class="bottom-content">
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
     </nav>
 
     <section class="main">
-        <!-- Home -->
-        <div class="home-container" id="home">
-            <div class="home-image-container">
-                <img src="./assets/img/memoji.png" alt="Memoji of Calvin Kim">
-            </div>
-            <div class="home-text-container">
-                <h1 class="welcome">WELCOME <span class="wave-emoji">👋🏽</span> I'M</h1>
-                <h1 class="calvin-kim">CALVIN KIM</h1>
-                <h5 class="full-stack-dev">full-stack developer</h5>
-                <!-- <span class="underline"></span> -->
-                <div class="keyframes">
-                    <ol class="dynamic">
-                        <li><span>DEVELOPER</span></li>
-                        <li><span>DESIGNER</span></li>
-                        <li><span>FRONT-END</span></li>
-                        <li><span>BACK-END</span></li>
-                    </ol>
-                </div>
-                <a href="#contact"><button type="button" class="btn btn-success hire-me-btn">HIRE ME!</button></a>
-            </div>
+      <!-- Home -->
+      <div class="home-container" id="home">
+        <div class="home-image-container">
+          <img src="./assets/img/memoji.png" alt="Memoji of Calvin Kim" />
         </div>
+        <div class="home-text-container">
+          <h1 class="welcome">
+            WELCOME <span class="wave-emoji">👋🏽</span> I'M
+          </h1>
+          <h1 class="calvin-kim">CALVIN KIM</h1>
+          <h5 class="full-stack-dev">full-stack developer</h5>
+          <!-- <span class="underline"></span> -->
+          <div class="keyframes">
+            <ol class="dynamic">
+              <li><span>DEVELOPER</span></li>
+              <li><span>DESIGNER</span></li>
+              <li><span>FRONT-END</span></li>
+              <li><span>BACK-END</span></li>
+            </ol>
+          </div>
+          <a href="#contact"
+            ><button type="button" class="btn btn-success hire-me-btn">
+              HIRE ME!
+            </button></a
+          >
+        </div>
+      </div>
 
-        <!-- About -->
-        <div class="about-container" id="about">
-            <div class="about-header-container">
-                <div class="about-header">WHO AM I?</div>
-            </div>
-            <div class="about-content-container">
-                <div class="about-image-container">
-                    <img src="./assets/img/memoji.png" alt="picture of calvin">
-                </div>
-                <div class="about-text-container">
-                    <p>My name is Calvin Kim and I am a full-stack web developer located in Brea, CA. I am currently a student
-                        at the University of California, Irvine web development bootcamp.</p> <br>
-                    <p>On top of that, I am also a student at the University of La Verne majoring in Business Finance.</p> <br>
-                    <p>Personally, I am a hardworker who is always willing to learn and who can work efficiently and effectively with a team or independently.</p>
-                </div>
-            </div>
+      <!-- About -->
+      <div class="about-container" id="about">
+        <div class="about-header-container">
+          <div class="about-header">WHO AM I?</div>
         </div>
+        <div class="about-content-container">
+          <div class="about-image-container">
+            <img src="./assets/img/memoji.png" alt="picture of calvin" />
+          </div>
+          <div class="about-text-container">
+            <p>
+              My name is Calvin Kim and I am a full-stack web developer located
+              in Brea, CA. I am currently a student at the University of
+              California, Irvine web development bootcamp.
+            </p>
+            <br />
+            <p>
+              On top of that, I am also a student at the University of La Verne
+              majoring in Business Finance.
+            </p>
+            <br />
+            <p>
+              Personally, I am a hardworker who is always willing to learn and
+              who can work efficiently and effectively with a team or
+              independently.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <!-- Work -->
-        <div class="work-container" id="work">
-            <div class="work-header-container">
-                <div class="work-header">MY WORKS</div>
-            </div>
-            <div class="work-content-container">
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/market-talk.jpg" alt="screenshot of markettalk">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/marketTalk/" target="_blank">MARKET TALK</a></h4>
-                        <h6>JavaScript, API, Bulma, CSS, and HTML</h6>
-                        <button><a href="https://github.com/calvin-kim13/marketTalk" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>        
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/weather-dashboard.jpg" alt="screenshot of weather-dashboard">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/weatherForecast/" target="_blank">WEATHER DASHBOARD</a></h4>
-                        <h6>JavaScript, API fetches</h6>
-                        <button><a href="https://github.com/calvin-kim13/weatherForecast" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/scheduler.jpg" alt="screenshot of scheduler">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/dayPlanner/" target="_blank">SCHEDULER</a></h4>
-                        <h6>JavaScript, local storage</h6>
-                        <button><a href="https://github.com/calvin-kim13/dayPlanner" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/scheduler.jpg" alt="screenshot of scheduler">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/dayPlanner/" target="_blank">SCHEDULER</a></h4>
-                        <h6>JavaScript, local storage</h6>
-                        <button><a href="https://github.com/calvin-kim13/dayPlanner" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/scheduler.jpg" alt="screenshot of scheduler">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/dayPlanner/" target="_blank">SCHEDULER</a></h4>
-                        <h6>JavaScript, local storage</h6>
-                        <button><a href="https://github.com/calvin-kim13/dayPlanner" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-container">
-                        <img src="./assets/img/scheduler.jpg" alt="screenshot of scheduler">
-                    </div>
-                    <div class="work-texts">
-                        <h4><a href="https://calvin-kim13.github.io/dayPlanner/" target="_blank">SCHEDULER</a></h4>
-                        <h6>JavaScript, local storage</h6>
-                        <button><a href="https://github.com/calvin-kim13/dayPlanner" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-            </div>
+      <!-- Work -->
+      <div class="work-container" id="work">
+        <div class="work-header-container">
+          <div class="work-header">MY WORKS</div>
         </div>
+        <div class="work-content-container">
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/market-talk.jpg"
+                alt="screenshot of markettalk"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/marketTalk/"
+                  target="_blank"
+                  >MARKET TALK</a
+                >
+              </h4>
+              <h6>JavaScript, API, Bulma, CSS, and HTML</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/marketTalk"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/weather-dashboard.jpg"
+                alt="screenshot of weather-dashboard"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/weatherForecast/"
+                  target="_blank"
+                  >WEATHER DASHBOARD</a
+                >
+              </h4>
+              <h6>JavaScript, API fetches</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/weatherForecast"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/scheduler.jpg"
+                alt="screenshot of scheduler"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/dayPlanner/"
+                  target="_blank"
+                  >SCHEDULER</a
+                >
+              </h4>
+              <h6>JavaScript, local storage</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/dayPlanner"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/scheduler.jpg"
+                alt="screenshot of scheduler"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/dayPlanner/"
+                  target="_blank"
+                  >SCHEDULER</a
+                >
+              </h4>
+              <h6>JavaScript, local storage</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/dayPlanner"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/scheduler.jpg"
+                alt="screenshot of scheduler"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/dayPlanner/"
+                  target="_blank"
+                  >SCHEDULER</a
+                >
+              </h4>
+              <h6>JavaScript, local storage</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/dayPlanner"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-container">
+              <img
+                src="./assets/img/scheduler.jpg"
+                alt="screenshot of scheduler"
+              />
+            </div>
+            <div class="work-texts">
+              <h4>
+                <a
+                  href="https://calvin-kim13.github.io/dayPlanner/"
+                  target="_blank"
+                  >SCHEDULER</a
+                >
+              </h4>
+              <h6>JavaScript, local storage</h6>
+              <button>
+                <a
+                  href="https://github.com/calvin-kim13/dayPlanner"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Contact -->
-        <div class="contact-container" id="contact">
-            <div class="contact-header-container">
-                <div class="contact-header">CONTACT ME</div>
-            </div>
-            <div class="contact-content-container">
-                <div class="form-container">
-                    <form method="post" action="" class="contact-form">
-                        <input type="text" id="name" name="name" placeholder="Name" class="contact-name" autocomplete="off" required>
-                        <input type="text" id="email" name="email" placeholder="Email" class="contact-email" autocomplete="off" required>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-subject" autocomplete="off" required>
-                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message..."
-                            class="contact-message" required></textarea>
-                        <button onclick="sendMail(); return false" type="button" class="button message-btn">SEND</button>
-                    </form>
-                </div>
-                <div class="contact-links-container">
-                    <div class="email-container">
-                        <div class="email-header">EMAIL</div>
-                        <div class="email">calvinkim1230@gmail.com</div>
-                    </div>
-                    <div class="phone-container">
-                        <div class="phone-header">MOBILE</div>
-                        <a href=""></a><div class="phone">(714) 477-3232</div>
-                    </div>
-                    <div class="contact-links">
-                        <a href="./resume/Calvin-Kim-Resume.pdf" target="_blank"><button type="button"
-                                class="button social resume"><i class='bx bxs-file-pdf'></i>  Resume</button></a>
-                        <a href="https://github.com/calvin-kim13" target="_blank"><button type="button"
-                                class="button social github"><i class='bx bxl-github'></i>  GitHub</button></a>
-                        <a href="https://www.linkedin.com/in/calvin-kim-143aa51a2/" target="_blank"><button type="button"
-                                class="button social linkedin"><i class='bx bxl-linkedin-square'></i>  LinkedIn</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="message-footer">Developed and Designed with ❤️ by Calvin Kim</div>
-                <div class="copyright-footer">&copy 2022 Calvin Kim</div>
-            </div>
+      <!-- Contact -->
+      <div class="contact-container" id="contact">
+        <div class="contact-header-container">
+          <div class="contact-header">CONTACT ME</div>
         </div>
+        <div class="contact-content-container">
+          <div class="form-container">
+            <form method="post" action="" class="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                class="contact-name"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="contact-email"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                class="contact-subject"
+                autocomplete="off"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Your Message..."
+                class="contact-message"
+                required
+              ></textarea>
+              <button
+                onclick="sendMail();"
+                type="button"
+                class="button message-btn"
+              >
+                SEND
+              </button>
+            </form>
+          </div>
+          <div class="contact-links-container">
+            <div class="email-container">
+              <div class="email-header">EMAIL</div>
+              <div class="email">calvinkim1230@gmail.com</div>
+            </div>
+            <div class="phone-container">
+              <div class="phone-header">MOBILE</div>
+              <a href=""></a>
+              <div class="phone">(714) 477-3232</div>
+            </div>
+            <div class="contact-links">
+              <a href="./resume/Calvin-Kim-Resume.pdf" target="_blank"
+                ><button type="button" class="button social resume">
+                  <i class="bx bxs-file-pdf"></i> Resume
+                </button></a
+              >
+              <a href="https://github.com/calvin-kim13" target="_blank"
+                ><button type="button" class="button social github">
+                  <i class="bx bxl-github"></i> GitHub
+                </button></a
+              >
+              <a
+                href="https://www.linkedin.com/in/calvin-kim-143aa51a2/"
+                target="_blank"
+                ><button type="button" class="button social linkedin">
+                  <i class="bx bxl-linkedin-square"></i> LinkedIn
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="message-footer">
+            Developed and Designed with ❤️ by Calvin Kim
+          </div>
+          <div class="copyright-footer">&copy 2022 Calvin Kim</div>
+        </div>
+      </div>
     </section>
 
     <script src="./assets/js/script.js"></script>
-
-</body>
+  </body>
 </html>
